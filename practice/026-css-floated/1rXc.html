@@ -1,0 +1,49 @@
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        border: solid 10px pink;
+    }
+
+    .col {
+        border: solid 5px lightgray;
+        float: left;
+    }
+
+    .parent {
+        width: 50%;
+    }
+
+    .left .child {
+        width: 33.33333333333%;
+    }
+
+    .right .child {
+        width: 50%;
+    }
+
+    .row:before,
+    .row:after,
+    .parent:before,
+    .parent:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+</style>
+
+<div class="row">
+    <div class="col parent left">
+        <div class="col child">1</div>
+        <div class="col child">2</div>
+        <div class="col child">3</div>
+    </div>
+    <div class="col parent right">
+        <div class="col child">1</div>
+        <div class="col child">2</div>
+    </div>
+</div>

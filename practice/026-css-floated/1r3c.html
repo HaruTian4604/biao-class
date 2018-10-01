@@ -1,0 +1,39 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        border: 5px dashed pink;
+    }
+
+    .col {
+        border: 5px solid gray;
+        float: left;
+    }
+
+    .col-5 {
+        width: 50%;
+    }
+
+    .col-2 {
+        width: 20%;
+    }
+
+    .col-3 {
+        width: 30%;
+    }
+
+    .row:before,
+    .row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+</style>
+
+<div class="row">
+    <div class="col col-5">50%</div>
+    <div class="col col-2">20%</div>
+    <div class="col col-3">30%</div>
+</div>

@@ -1,0 +1,27 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        border: 15px solid pink;
+    }
+
+    .col {
+        width: 50%;
+        float: left;
+        border: 15px solid black;
+    }
+
+    .row:before,
+    .row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+</style>
+
+<div class="row">
+    <div class="col left">a</div>
+    <div class="col right">b</div>
+</div>
