@@ -1,0 +1,161 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+    body {
+        font-family: sans-serif;
+        background-image: url(./banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        /* background: #666; */
+        font-size: 13px;
+        font-weight: 600;
+        background-position: -270px 0px;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        padding: .2em .4em;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .col-6 {
+        width: 25%;
+    }
+
+    .col-18 {
+        width: 75%;
+    }
+
+    .container {
+        min-width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row:before,
+    .row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .nav {
+        color: #eee;
+
+        margin-top: 35px;
+    }
+
+    .nav a {
+        color: inherit;
+    }
+
+
+    .right {
+        text-align: right;
+        margin-top: -20px;
+    }
+
+    .user {
+        font-size: 90%;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 135px;
+        height: 65px;
+        background-image: url(./lianjia-sprite-1X.png);
+        background-position: 10px -380px;
+    }
+
+    .icon-location {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(./lianjia-sprite-1X.png);
+        background-position: 577px -12px;
+    }
+
+    .lvju {
+        margin: 0;
+        display: inline-block;
+        background-image: url(./lvju.png);
+        position: relative;
+        background-repeat: no-repeat;
+        top: 5px;
+        left: 4px;
+        width: 19px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    span.user {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(./lianjia-sprite-1X.png);
+        background-position: 552px -20px;
+    }
+
+    span.point {
+        display: inline-block;
+        width: 9px;
+        height: 16px;
+        background-image: url(./lianjia-sprite-1X.png);
+        background-position: 534px -13px;
+    }
+
+    a.location {
+        position: relative;
+        top: -38px;
+        background-color: rgba(000, 000, 000, .3);
+        border-radius: 25px;
+        padding: 0px 10px 5px 0px;
+    }
+</style>
+
+<body>
+    <div class="row nav">
+        <div class="cantainer">
+            <div class="col left col-6">
+                <a href="#" id="logo"></a>
+                <a href="#" class="location">
+                    <span class="location">
+                        <span class="icon-location"></span>
+                        深圳
+                    </span>
+                </a>
+            </div>
+            <div class="col right col-18">
+                <div class="row user">
+                    <span class="user"></span>
+                    <a href="#">登录</a>
+                    <a href="#">立即注册</a>
+                </div>
+                <div class="row link-group">
+                    <a href="#">二手房</a>
+                    <a href="#">新房</a>
+                    <a href="#">租房</a>
+                    <span class="lvju"></span>
+                    <a href="#">旅居</a>
+                    <a href="#">海外</a>
+                    <a href="#">小区</a>
+                    <a href="#">经纪人</a>
+                    <a href="#">指南</a>
+                    <a href="#">房价</a>
+                    <a href="#">工具</a>
+                    <span class="point"></span>
+                    <a href="#">发布房源</a>
+                    <a href="#">企业汇</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
