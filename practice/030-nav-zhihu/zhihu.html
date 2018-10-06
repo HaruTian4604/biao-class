@@ -1,0 +1,110 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: sans-serif;
+    }
+    .nav {
+        color: #8590a6;
+        box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .nav a:hover {
+        color: #175199;
+    }
+    .col {
+        float: left;
+    }
+    .row::before,
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .col-8 {
+        width: 33.333333333333333%
+    }
+
+
+    .nav a {
+        padding: 10px 25px;
+        margin: 0;
+    }
+    #logo {
+        font-size: 200%;
+        color: #0084ff;
+    }
+    .link-group,
+    .user {
+        text-align: right;
+
+    }
+    input {
+        background: #f6f6f6;
+        border: solid #ebebeb;
+        width: 330px;
+        height: 40px;
+        padding: 10px 10px;
+        color: #1a1a1a;
+    }
+    /* input:focus {
+        border: solid 1px #8590a6;
+    } */
+    button {
+        width: 70px;
+        height: 40px;
+        border: none;
+        background: #0084ff;
+        color: white;
+    }
+    button, input {
+        border-radius: 3px;
+    }
+    
+    .user {
+        padding-left: 40px;
+        padding-right: 150px;
+    }
+    .link-group {
+        padding-right: 30px;
+    }
+    /* .link-group {
+        padding: 10px;
+    } */
+    .active,
+    .active:hover {
+        color: #444;
+    }
+     
+</style>
+
+<body>
+    <div class="row nav">
+        <!-- <div class="container"> -->
+        <div class="col col-8 link-group">
+            <span id="logo">知乎</span>
+            <a href="#" class="active">首页</a>
+            <a href="#">发现</a>
+            <a href="#">话题</a>
+        </div>
+        <div class="col col-8 search">
+            <input type="text" placeholder="国庆参加婚礼送什么                             ">
+            <button>提问</button>
+        </div>
+        <div class="col col-8 user">
+            <a href="#">提醒</a>
+            <a href="#">私信</a>
+            <a href="#">头像</a>
+        </div>
+        <!-- </div> -->
+    </div>
+</body>
