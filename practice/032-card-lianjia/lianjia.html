@@ -1,0 +1,71 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .col-12 {
+        width: 50%;
+    }
+
+    .col-8 {
+        width: 33.333333333333333%;
+    }
+
+    .row:before,
+    .row:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .card {
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .info {
+        padding: 20px;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .price {
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+    .year {
+        text-align: right;
+        font-size: 12px;
+        color: #888;
+        font-weight: bold;
+    }
+    img {
+        width: 100%;
+    }
+</style>
+
+<div class="row card-group">
+    <div class="col col-8 card">
+        <img src="http://dummyimage.com/600x400" alt="">
+        <div class="info">
+            <div class="title">远洋山水</div>
+            <div class="row disc">
+                <div class="col col-12 price">
+                    65520元/平
+                </div>
+                <div class="col col-12 year">
+                    2003年建
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
